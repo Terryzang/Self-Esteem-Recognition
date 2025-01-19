@@ -317,7 +317,7 @@ for experiment_num in range(100):
     # Concatenate all results
     all_results = pd.concat(results_list)
     all_results.to_excel(
-            f'E:\\zangxinlei\Visual_modality\\20241202\\Task{task}\\ensemble_{modal}_result_{experiment_num + 1}.xlsx',
+            f'Task{task}\\ensemble_{modal}_result_{experiment_num + 1}.xlsx',
             index=False)
 
     # Record overall results
@@ -331,5 +331,5 @@ for experiment_num in range(100):
 
 # Save the summary results of 100 experiments
 overall_df = pd.DataFrame(overall_results)
-overall_df.to_excel(f'E:\\zangxinlei\Visual_modality\\20241202\\ensemble_{modal}_task_{task}.xlsx',
+overall_df.to_excel(f'ensemble_{modal}_task_{task}.xlsx',
             index=False)
